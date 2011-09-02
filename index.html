@@ -45,17 +45,14 @@ code { color: #555555; }
   
 <h2>RestKit</h2>
 
-<p>
-<a
-href="http://restkit.org/">RestKit</a>
-is an open source Objective-C framework for iOS that simplifies interacting with RESTful web services. RestKit has been written by <a href="http://twotoasters.com/">Two Toasters</a>, and they have written an <a href="http://mobile.tutsplus.com/tutorials/iphone/restkit_ios-sdk/">excellent tutorial</a> for getting started with it. They are also about to publish an advanced tutorial, <a  href="https://github.com/twotoasters/RestKit/blob/fea3eed7af6d72ec4582c8c9604778d5eb019793/Docs/MobileTuts%20Advanced%20RestKit/First%20Draft.md">a  draft</a> of which is available in their Github repo.</p>
-
-
-<div class="footnote">[1] source code for this project is available on <a href="https://github.com/liebke/restkit-github-client-example">Github</a>.</div>
+is an open source Objective-C framework for iOS that simplifies interacting with RESTful web services. RestKit has been written by <a href="http://twotoasters.com/">Two Toasters</a>, and they have written two 
+<a href="http://mobile.tutsplus.com/tutorials/iphone/restkit_ios-sdk/">excellent</a> 
+<a href="http://mobile.tutsplus.com/tutorials/iphone/advanced-restkit-development_iphone-sdk/">tutorials</a> 
+for getting started with it.
 
 <h2>Setting Up RestKit with Xcode 4</h2>
 
-    <p>There are instructions on <a href="https://github.com/twotoasters/RestKit">Github</a> for installing RestKit as a project dependency using either version 3 or 4 of Xcode; I will start by providing a detailed walk through of the installation instructions for Xcode 4.</p>
+    <p>There are instructions on <a href="https://github.com/RestKit/RestKit">Github</a> for installing RestKit as a project dependency using either version 3 or 4 of Xcode; I will start by providing a detailed walk through of the installation instructions for Xcode 4.</p>
 
 <p>
 So let's get started by creating a new project using the Navigation-based Application template,
@@ -85,7 +82,7 @@ Once the project is open, I'm going to set the device to <b>Universal</b> and th
 
 <p> Next we want to create a RestKit git submodule in our project directory, so open up a terminal window, cd to the project directory and enter:
     
-<pre><code>git submodule add git://github.com/twotoasters/RestKit.git RestKit</code></pre> </p>
+<pre><code>git submodule add git://github.com/RestKit/RestKit RestKit</code></pre> </p>
 
     <p>
     Next open the RestKit project in Xcode, and drag the RestKit.xcodeproj file from the RestKit project window and drop it on to the GithubClient.xcodeproj file. Unfortunately, Xcode will only make a project available in one window at a time, so we can't access the RestKit project files from our project until we close the other windows containing RestKit, and then re-open our project.
